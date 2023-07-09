@@ -1,7 +1,7 @@
 CREATE TABLE categories (
     category_id smallint NOT NULL,
     category_name varchar(15) NOT NULL,
-    description VARCHAR(max)
+    description text
 );
 CREATE TABLE customers (
     customer_id varchar(40) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE employees (
     country varchar(15),
     home_phone varchar(24),
     extension varchar(4),
-    notes varchar(max),
+    notes text,
     reports_to smallint,
     photo_path varchar(255),
 	salary real
@@ -89,5 +89,5 @@ CREATE TABLE suppliers (
     country varchar(15),
     phone varchar(24),
     fax varchar(24),
-    homepage varchar(max)
+    homepage text
 );
